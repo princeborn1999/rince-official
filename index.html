@@ -27,40 +27,94 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <link rel="stylesheet" href="./style.css">
 
+    <!-- Swiper -->
 </head>
 <body>
   <!-- <header class="bg-dark text-white shadow" id="header"></header> -->
   <!-- fullpage -->
   <div id="fullpage">
+
+
     <div class="section bg-blue relative " id="fullpage-section">
-      <header class="justify-content-center"><img src="./src/img/logo_white.png" style="height: 3rem;" alt=""><h1 class="text-white">RINCE</h1></header>
-      <div><h4 class="text-white">簡單上手</h4></div>
+      <!-- header -->
+      <header class="justify-content-center"><img src="./src/img/logo_white.png" style="height: 3rem;" alt=""><a href=""><h1 class="text-white">RINCE</h1></a></header>
+      <!-- mainsection -->
       <div>
-        <h4 class="text-white"> appreciate your time, enrich your life</h4>
-        <h1 class="text-white">RINCE</h1>
-        <h4 class="text-white"> appreciate your time, enrich your life</h4>
+          <br>
+          <h2 class=" text-white justify-content-center d-flex fw-bold" style="font-size: 3rem;">簡單上手</h2>
+          <br>
+          <h2 class=" text-white justify-content-center d-flex"style="font-size: 3rem;">appreciate your time, enrich your life.</h2>
+          <h1 class=" text-white justify-content-center d-flex" style="font-size: 10rem;">RINCE</h1>
+          <h2 class=" text-white justify-content-center d-flex"style="font-size: 3rem;">appreciate your time, enrich your life.</h2>
+          <br>
+          <h2 class=" text-white justify-content-center d-flex fw-bold" style="font-size: 3rem;">隨時掌握</h2>
       </div>
-      <div><h4 class="text-white">掌握時間</h4></div>
+      
     </div>
-    <div class="section  relative" id="fullpage-section">
-      <h1 class="blue">簡單上手</h1>
+    
+    <!-- 簡單上手 -->
+    <div class="section container-sm relative" id="fullpage-section">
+      <h2 class=" blue fw-bold" style="font-size: 3rem;">簡單上手</h2>
+      <!-- Swiper.js -->
+      
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+      </div>
+      <!-- Swiper.js -->
     </div>
-    <div class="section  relative" id="fullpage-section">
-      <h1 class="blue">隨手掌握</h1>
+    
+
+    <!-- 隨手掌握 -->
+    <div class="section container-sm relative" id="fullpage-section">
+      <h2 class="blue fw-bold" style="font-size: 3rem;">隨時掌握</h2>
+      
     </div>
-    <div class="section  relative" id="fullpage-section"><h1 class="blue">立即下載</h1></div>
-    <div class="section  relative" id="fullpage-section">
-      <h1 class="blue">開發人員</h1>
+
+    <!-- 立即下載 -->
+    <div class="section container-sm relative" id="fullpage-section">
+      <h2 class=" blue fw-bold" style="font-size: 3rem;">立即下載</h2>
+    </div>
+
+    <!-- 開發人員 -->
+    <div class="section relative" id="fullpage-section">
+      <h2 class=" blue fw-bold" style="font-size: 3rem;">開發人員</h2>
       <footer class="justify-content-center relative">
         <div class="bg-blue "><p class="text-white ">©Copyright AaronPrince 2022</p></div>
       </footer>
     </div>
+
   </div>
   <!-- fullpage -->
-    <script >
-      $(document).ready(function(){
-          $('#fullpage').fullpage()
-      })
-    </script>
+
+  <script>var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  </script>
+  <script >
+    $(document).ready(function(){
+        $('#fullpage').fullpage()
+    })
+  </script>
 </body>
 </html>
