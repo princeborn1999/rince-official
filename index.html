@@ -27,7 +27,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <link rel="stylesheet" href="./style.css">
 
-    <!-- Swiper -->
+    <!-- Swiper.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
   <!-- <header class="bg-dark text-white shadow" id="header"></header> -->
@@ -54,38 +60,41 @@
     
     <!-- 簡單上手 -->
     <div class="section container-sm relative" id="fullpage-section">
-      <h2 class=" blue fw-bold" style="font-size: 3rem;">簡單上手</h2>
-      <!-- Swiper.js -->
-      
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+      <br>
+      <h2 class=" blue fw-bold justify-content-center d-flex" style="font-size: 3rem;">簡單上手</h2>
+      <br>
+      <br>
+      <div class="justify-content-center d-flex">
+        <!-- Swiper.js -->
+        <div class="swiper mySwiper shadow " style="height:30rem ;width:60rem">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="rounded" src="./src/img/65787.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="rounded" src="./src/img/business-woman-working-laptop.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="rounded" src="./src/img/multiethnic-team-partners-working-with-paralyzed-woman-sitting-wheelchair-suffering-from-chronic-disability-impairment-business-people-using-laptop-health-condition.jpg" alt=""></div>
+            <div class="swiper-slide"><img class="rounded" src="./src/img/young-lesbian-lgbtq-women-couple-using-mobile-phone-home.jpg" alt=""></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- Swiper.js -->
       </div>
-      <!-- Swiper.js -->
     </div>
     
-
     <!-- 隨手掌握 -->
     <div class="section container-sm relative" id="fullpage-section">
-      <h2 class="blue fw-bold" style="font-size: 3rem;">隨時掌握</h2>
+      <h2 class="blue fw-bold justify-content-center d-flex" style="font-size: 3rem;">隨時掌握</h2>
       
     </div>
 
     <!-- 立即下載 -->
     <div class="section container-sm relative" id="fullpage-section">
-      <h2 class=" blue fw-bold" style="font-size: 3rem;">立即下載</h2>
+      <h2 class=" blue fw-bold justify-content-center d-flex" style="font-size: 3rem;">立即下載</h2>
     </div>
 
     <!-- 開發人員 -->
     <div class="section relative" id="fullpage-section">
-      <h2 class=" blue fw-bold" style="font-size: 3rem;">開發人員</h2>
+      <h2 class=" blue fw-bold justify-content-center d-flex" style="font-size: 3rem;">開發人員</h2>
       <footer class="justify-content-center relative">
         <div class="bg-blue "><p class="text-white ">©Copyright AaronPrince 2022</p></div>
       </footer>
@@ -94,7 +103,9 @@
   </div>
   <!-- fullpage -->
 
-  <script>var swiper = new Swiper(".mySwiper", {
+  <!-- swiper -->
+  <script>
+  var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -111,6 +122,7 @@
     },
   });
   </script>
+
   <script >
     $(document).ready(function(){
         $('#fullpage').fullpage()
